@@ -28,7 +28,7 @@ pipeline {
                 stage ('Deploy to Staging'){
                     steps {
 //                        sh "scp -q -i /usr/share/jenkins/tomcat_server_key.pem **/target/*.war ec2-user@${params.tomcat_dev}:/var/lib/tomcat7/webapps"
-                        sh "scp -q -P 22 -i /usr/share/jenkins/tomcat_server_key.pem /home/ubuntu/tt ubuntu@34.239.124.201:/tmp"
+                        sh "scp -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -i /usr/share/jenkins/tomcat_server_key.pem /home/ubuntu/tt ubuntu@34.239.124.201:/home/ubuntu"
                     }
                 }
 
