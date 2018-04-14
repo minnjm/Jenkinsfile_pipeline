@@ -8,7 +8,7 @@ The job is triggered by (1) polling github repository once a day (written in Jen
 
 The project was implemented in AWS cloud and includes following components:
 
-One Jenins master running on an aws ec2 ubuntu 16.04 server.
+One Jenkins master running on an aws ec2 ubuntu 16.04 server.
 One development Tomcat7 running on an aws ec2 Linux server.
 one production Tomcat7 running on an aws ec2 Linux server.
 
